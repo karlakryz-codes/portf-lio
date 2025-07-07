@@ -1,0 +1,293 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e fonte geral */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Foto circular */
+header img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #44e0ff;
+  box-shadow: 0 0 15px #44e0ffaa;
+  margin-bottom: 15px;
+}
+
+/* Nome */
+header h1 {
+  font-size: 2.5rem;
+  color: #44e0ff;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* Frase centralizada abaixo do nome */
+header p.frase {
+  font-style: italic;
+  color: #a0b0c0;
+  font-size: 1.1rem;
+  max-width: 460px;
+  margin: 0 auto 25px auto;
+  line-height: 1.4;
+}
+
+/* Navegação */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-weight: 600;
+}
+
+header nav ul li a {
+  color: #44e0ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #88d4ff;
+}
+
+/* SECTIONS */
+section {
+  max-width: 760px;
+  margin: 0 auto 50px auto;
+  padding: 0 10px;
+}
+
+section h1,
+section h2 {
+  color: #44e0ff;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Sobre Mim */
+.sobremim p {
+  font-size: 1.1rem;
+  color: #c0c8d2;
+  line-height: 1.5;
+}
+
+/* Habilidades */
+.habilidades ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding-left: 0;
+}
+
+.habilidades li {
+  background-color: #1b1b1b;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: #b0c9d9;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 0 10px #44e0ff33;
+}
+
+.habilidades li svg {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* Projetos */
+.projetos .projeto {
+  background-color: #1b1b1b;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 12px #44e0ff44;
+}
+
+.projetos .projeto h3 {
+  color: #44e0ff;
+  margin-bottom: 12px;
+}
+
+.projetos .projeto p {
+  color: #b0c9d9;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.projetos .projeto a {
+  color: #44e0ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.projetos .projeto a:hover {
+  color: #88d4ff;
+}
+
+/* Certificados */
+.certificados {
+  max-width: 760px;
+  margin: 40px auto 60px auto;
+  padding: 0 10px;
+}
+
+.certificados h2 {
+  text-align: center;
+  color: #44e0ff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* Frase centralizada em cima dos certificados */
+.certificados .frase-certificados {
+  text-align: center;
+  color: #7f9bb3;
+  font-style: italic;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+.certificado {
+  display: flex;
+  gap: 20px;
+  background-color: #1b1b1b;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #44e0ff44;
+  align-items: center;
+}
+
+.logo-empresa {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.detalhes h3 {
+  color: #44e0ff;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.detalhes .empresa,
+.detalhes .datas,
+.detalhes .competencias {
+  color: #a0b0c0;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+/* Redes Sociais */
+.redeSocial {
+  background-color: #1b1b1b;
+  padding: 25px 20px;
+  border-radius: 8px;
+  max-width: 320px;
+  margin: 0 auto 60px auto;
+  box-shadow: 0 0 12px rgba(68, 224, 255, 0.4);
+}
+
+.redeSocial h2 {
+  color: #44e0ff;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.frase-redes {
+  text-align: center;
+  color: #7f9bb3;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+.redeSocial ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.redeSocial ul li {
+  margin-bottom: 15px;
+}
+
+.redeSocial ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #44e0ff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  gap: 8px;
+}
+
+.redeSocial ul li a svg {
+  flex-shrink: 0;
+  transition: fill 0.3s ease;
+}
+
+.redeSocial ul li a:hover {
+  color: #88d4ff;
+}
+
+.redeSocial ul li a:hover svg {
+  fill: #88d4ff;
+}
+
+/* Footer */
+footer.rodape {
+  background-color: #121212;
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 1px solid #333;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+footer.rodape a {
+  color: #44e0ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer.rodape a:hover {
+  color: #88d4ff;
+}
